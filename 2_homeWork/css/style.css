@@ -61,7 +61,31 @@
     margin-bottom: -3px;
     border-bottom: 3px solid #5094f2;
 }
-
+.content{
+    position: relative;
+}
+.content:before{
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 20px;
+    background: url(../image/arrow-l.png) no-repeat center;
+    height: 100px;
+    width: 100px;
+    z-index: 999;
+}
+.content:after{
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: 20px;
+    background: url(../image/arrow-r.png    ) no-repeat center;
+    height: 100px;
+    width: 100px;
+    z-index: 999;
+}
+.arrow:hover:before{
+}
 .horizontalCard {
     padding: 40px 0;
     display: flex;
