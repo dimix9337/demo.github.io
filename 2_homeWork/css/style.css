@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "SegoeWP";
+    src: url("../fonts/SegoeWP-Light/SegoeWP-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "SegoeWPN";
+    src: url("../fonts/SegoeWPN/SegoeWPN.ttf") format("truetype");
+
+}
+
+@font-face {
+    font-family: "SegoeWPN-Light";
+    src: url("../fonts/SegoeWPN-Light/SegoeWPN-Light.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    min-height: 80px;
+}
+
+.header__logo {
+    align-self: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3px;
+
+}
+
+.navigation__item {
+    list-style: none;
+    padding: 15px;
+    font-family: SegoeWPN, serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navigation__item-gray {
+    color: #6c6c6c;
+}
+
+.navigation__item-gray:hover {
+    margin-bottom: -3px;
+    border-bottom: 3px solid #5094f2;
+}
+
+.navigation__item-active {
+    margin-bottom: -3px;
+    border-bottom: 3px solid #5094f2;
+}
+
+.horizontalCard {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.horizontalCard-blurImg {
+    background: url(../image/bg-banner.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.horizontalCard__text {
+    align-self: center;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.horizontalCard__text-white {
+    color: #fff;
+}
+
+.horizontalCard__header-main {
+    font-size: 45px;
+    font-family: SegoeWP, serif;
+    font-weight: normal;
+}
+
+.horizontalCard__context-main {
+    font-size: 25px;
+    font-family: SegoeWP, serif;
+    line-height: 35px;
+    font-weight: normal;
+}
+
+.horizontalCard__button {
+    text-decoration: none;
+}
+
+.horizontalCard__button-main {
+    background-color: #5094f2;
+    color: #fff;
+    font-size: 20px;
+    line-height: 70px;
+    padding: 5px 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: SegoeWP, serif;
+}
+
+.horizontalCard__button-main > i {
+    margin-right: 5px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: SegoeWPN, serif;
+}
+
+.smallCard {
+    flex-basis: 300px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.smallCard__header-main {
+    color: #5094f2;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.smallCard__context-main {
+    text-align: center;
+    color: #909090;
+}
+
+.shop {
+    font-family: SegoeWPN, serif;
+    color: #6c6c6c;
+}
+
+.horizontalCard__header-cartImg {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.horizontalCard__header-cart {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.footer__text {
+    text-align: center;
+    font-family: "SegoeWPN-Light";
+    font-size: 15px;
+    padding: 20px;
+}
