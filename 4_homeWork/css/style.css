@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Hairline'), local('Montserrat-Hairline'), url('../fonts/montserrat/montserrathairline.woff2') format('woff2'), url('../fonts/montserrat/montserrathairline.woff') format('woff'), url('../fonts/montserrat/montserrathairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Light'), local('Montserrat-Light'), url('../fonts/montserrat/montserratlight.woff2') format('woff2'), url('../fonts/montserrat/montserratlight.woff') format('woff'), url('../fonts/montserrat/montserratlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat'), local('Montserrat-Regular'), url('../fonts/montserrat/montserrat.woff2') format('woff2'), url('../fonts/montserrat/montserrat.woff') format('woff'), url('../fonts/montserrat/montserrat.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat/montserratbold.woff2') format('woff2'), url('../fonts/montserrat/montserratbold.woff') format('woff'), url('../fonts/montserrat/montserratbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: local('Montserrat Black'), local('Montserrat-Black'), url('../fonts/montserrat/montserratblack.woff2') format('woff2'), url('../fonts/montserrat/montserratblack.woff') format('woff'), url('../fonts/montserrat/montserratblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efefef;
+    font-family: Montserrat, sans-serif;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.poductCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardImg {
+    position: relative;
+    height: 600px;
+    width: 460px;
+    background-color: #37b0ae;
+}
+
+.cardImg__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.cardImg__img {
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+}
+.smallPhoto{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%,-50%);
+    z-index: 2;
+}
+.smallPhoto__item{
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin: 5px;
+    padding: 7px;
+    background-color: rgba(255,255,255,0.31);
+    transition: background-color .3s;
+}
+.smallPhoto__item:hover{
+    background-color: rgba(55, 176, 174, 0.4);
+}
+
+.cardInfo {
+    position: relative;
+    height: 560px;
+    width: 470px;
+    background-color: white;
+    padding: 70px 0 70px 70px;
+    color: #3a4d5c;
+    z-index: 1;
+}
+.cardInfo__title{
+    font-size: 34px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.cardInfo__subtitle{
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+.list{
+    color: #7c8d9c;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+.list__title{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.list__item {
+    list-style: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.list__item:before{
+    content: "";
+    height: 5px;
+    width: 5px;
+    margin-right: 15px;
+    background-color: #37b0ae;
+}
+
+.cardInfo__status{
+    text-transform: uppercase;
+    color: #7c8d9c;
+    font-size: 12px;
+    margin-right: 12px;
+}
+.count{
+    color: #7c8d9c;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.count__title{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.count__group{
+    display: flex;
+    vertical-align: middle;
+}
+
+.count__btn{
+    line-height: 2px;
+    padding: 15px;
+    border: 1px solid silver;
+    transition: background-color .3s;
+}
+.count__btn:hover{
+    background-color: rgba(55, 176, 174, 0.2);
+}
+.count__input{
+    width: 40px;
+    height: 32px;
+    color: #7c8d9c;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid silver;
+}
+.price{
+    margin-bottom: 35px;
+}
+.price__now{
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 40px;
+    color: #3a4d5c;
+    display: inline-block;
+}
+.price__old{
+    font-size: 14px;
+    font-weight: 300;
+    color: #7c8d9c;
+    padding-left: 10px;
+    display: inline-block;
+}
+.cardInfo__btn {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 0;
+    margin-right: 10px;
+    width: 200px;
+    display: inline-block;
+}
+
+.cardInfo__btn-blue{
+    background-color: #37b0ae;
+    color: white;
+    transition: background-color .3s;
+}
+.cardInfo__btn-blue:hover{
+    background-color: #368b89;
+
+}
+
+.cardInfo__btn-blueOutline{
+    border: 1px solid #7c8d9c;
+    color: #7c8d9c;
+    padding: 14px 0;
+    transition: background-color .3s,color .2s;
+}
+.cardInfo__btn-blueOutline:hover{
+    border: 1px solid #37b0ae;
+    color: #37b0ae;
+}
+
+
+.count__input::-webkit-outer-spin-button,
+.count__input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
