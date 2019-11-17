@@ -13,10 +13,16 @@
     font-family: "SegoeWPN-Light";
     src: url("../fonts/SegoeWPN-Light/SegoeWPN-Light.ttf") format("truetype");
 }
-
+body{
+    font-size: 16px;
+}
 * {
     margin: 0;
     padding: 0;
+}
+
+img {
+    width: 100%;
 }
 
 .header {
@@ -29,6 +35,15 @@
 
 .header__logo {
     align-self: center;
+}
+
+.header__shortNavigation {
+    display: none;
+    padding: 5px 10px;
+    align-self: center;
+    color: #fff;
+    font-size: 1.250em;
+    background-color: #5094f2;
 }
 
 .navigation {
@@ -44,7 +59,7 @@
     list-style: none;
     padding: 15px;
     font-family: SegoeWPN, serif;
-    font-size: 20px;
+    font-size: 1.250em;
     cursor: pointer;
 }
 
@@ -61,36 +76,43 @@
     margin-bottom: -3px;
     border-bottom: 3px solid #5094f2;
 }
-.content{
+
+.content {
     position: relative;
 }
-.content:before{
+
+.horizontalCard {
+    position: relative;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontalCard-blurImg:before {
     content: '';
     position: absolute;
-    top: 15%;
+    top: 40%;
     left: 20px;
     background: url(../image/arrow-l.png) no-repeat center;
     height: 100px;
     width: 100px;
     z-index: 999;
 }
-.content:after{
+
+.horizontalCard-blurImg:after {
     content: '';
     position: absolute;
-    top: 15%;
+    top: 40%;
     right: 20px;
-    background: url(../image/arrow-r.png    ) no-repeat center;
+    background: url(../image/arrow-r.png) no-repeat center;
     height: 100px;
     width: 100px;
     z-index: 999;
 }
-.arrow:hover:before{
-}
-.horizontalCard {
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.horizontalCard__img {
+    padding: 0 30px;
+    align-self: center;
 }
 
 .horizontalCard-blurImg {
@@ -112,13 +134,13 @@
 }
 
 .horizontalCard__header-main {
-    font-size: 45px;
+    font-size: 2.813em;
     font-family: SegoeWP, serif;
     font-weight: normal;
 }
 
 .horizontalCard__context-main {
-    font-size: 25px;
+    font-size: 1.563em;
     font-family: SegoeWP, serif;
     line-height: 35px;
     font-weight: normal;
@@ -131,7 +153,7 @@
 .horizontalCard__button-main {
     background-color: #5094f2;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.250em;
     line-height: 70px;
     padding: 5px 15px;
     margin-left: 15px;
@@ -151,21 +173,26 @@
 }
 
 .smallCard {
+    display: flex;
+    flex-direction: column;
     flex-basis: 300px;
     text-align: center;
     margin: 50px 0;
 }
 
+.smallCard__img {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
 .smallCard__header-main {
     color: #5094f2;
-    font-size: 20px;
-    text-align: center;
+    font-size: 1.250em;
     margin-bottom: 5px;
     font-weight: normal;
 }
 
 .smallCard__context-main {
-    text-align: center;
     color: #909090;
 }
 
@@ -174,20 +201,72 @@
     color: #6c6c6c;
 }
 
+.horizontalCard-bottom {
+    flex-wrap: wrap;
+}
+
 .horizontalCard__header-cartImg {
-    font-size: 40px;
+    font-size: 2.500em;
     text-align: center;
     margin-bottom: 5px;
 }
 
 .horizontalCard__header-cart {
-    font-size: 25px;
+    font-size: 1.563em;
     margin: 20px 0;
 }
 
 .footer__text {
     text-align: center;
     font-family: "SegoeWPN-Light";
-    font-size: 15px;
+    font-size: 0.938em;
     padding: 20px;
+}
+
+@media screen and (max-width: 590px) {
+    .navigation {
+        display: none;
+    }
+
+    .header__shortNavigation {
+        display: block;
+    }
+
+    .horizontalCard-blurImg {
+        flex-wrap: nowrap;
+    }
+    .horizontalCard__text{
+        font-size: 14px;
+        margin: 0;
+        flex-basis: 550px;
+        padding: 0 20px;
+    }
+    .horizontalCard:after,
+    .horizontalCard:before {
+        display: none;
+    }
+    .smallCard{
+        margin: 0;
+        padding: 20px 0;
+        flex-basis: 100%;
+        text-align: left;
+        align-items: center;
+        border-bottom: 1px solid silver;
+        flex-direction: row;
+    }
+    .smallCard__img {
+        max-width: 100px;
+        margin: 0;
+        padding: 0 20px;
+
+    }
+    .smallCard__text {
+
+    }
+}
+
+@media screen and (max-width: 450px ) {
+    .horizontalCard {
+        flex-wrap: wrap;
+    }
 }
