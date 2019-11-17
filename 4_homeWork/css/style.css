@@ -240,3 +240,23 @@ img {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+@media screen and (max-width: 1050px) {
+    .cardImg{
+        width: 540px;
+        padding-bottom: 100px;
+    }
+    .cardImg__img{
+        top: 50%;
+        transform: translate(-50%,-50%) scale(.8);
+    }
+    .smallPhoto{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        top: initial;
+        bottom: 10%;
+        left: 0;
+        transform: initial;
+    }
+
+}
