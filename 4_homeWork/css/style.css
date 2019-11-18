@@ -49,12 +49,6 @@ img {
     object-position: center;
 }
 
-.content {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
 
 .poductCard {
     display: flex;
@@ -101,8 +95,9 @@ img {
 }
 
 .cardInfo {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    height: 560px;
     width: 470px;
     background-color: white;
     padding: 70px 0 70px 70px;
@@ -246,8 +241,26 @@ img {
         padding-bottom: 100px;
     }
     .cardImg__img{
+        width: 100%;
         top: 50%;
         transform: translate(-50%,-50%) scale(.8);
+    }
+    .cardImg__img img{
+        width: 100%;
+    }
+    .cardInfo{
+        padding-left: 20px;
+        width: 520px;
+    }
+    .cardInfo__btn{
+        width: 90%;
+        align-self: center;
+        margin-bottom: 10px;
+
+    }
+    .cardInfo__btn-blue{
+        padding-left: 1px;
+        padding-right: 1px;
     }
     .smallPhoto{
         display: flex;
