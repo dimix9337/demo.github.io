@@ -249,11 +249,11 @@ img {
         width: 100%;
     }
     .cardInfo{
-        padding-left: 20px;
+        padding: 0 20px;
         width: 520px;
     }
     .cardInfo__btn{
-        width: 95%;
+        width: 100%;
         align-self: center;
         margin-bottom: 10px;
 
