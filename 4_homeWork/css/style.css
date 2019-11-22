@@ -237,10 +237,11 @@ img {
 }
 @media screen and (max-width: 1050px) {
     .cardImg{
-        width: 540px;
+        width: 560px;
         padding-bottom: 100px;
     }
     .cardImg__img{
+        margin-top: -20px;
         width: 100%;
         top: 50%;
         transform: translate(-50%,-50%) scale(.8);
@@ -249,7 +250,7 @@ img {
         width: 100%;
     }
     .cardInfo{
-        padding: 0 20px;
+        padding: 50px 20px;
         width: 520px;
     }
     .cardInfo__btn{
@@ -272,4 +273,9 @@ img {
         transform: initial;
     }
 
+}
+@media screen and (max-width: 500px) {
+    .cardImg{
+        height: 110vw;
+    }
 }
