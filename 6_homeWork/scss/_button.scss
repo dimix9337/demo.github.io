@@ -16,39 +16,62 @@
                 border-color: #061e37;
                 color: #061e37;
             }
+            @media screen and (max-width: 380px) {
+               display: none;
+            }
+        }
+
+        &-burger {
+            border-radius: 3px;
+            padding: 6px;
+            margin: 0 6px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color .3s, border-color .7s;
+
+            &:hover {
+                border-color: #061e37;
+                color: #061e37;
+            }
         }
 
         &-theme {
 
             &-darkBlue {
                 background-color: #061e37;
-                
+                color: white;
+            }
+            &-blue {
+                background-color: #1de9b6;
+                color: white;
             }
             &-white{
                 color: #061e37;
                 background-color: white;
-                
+
             }
-            
+            &-blue,
+            &-darkBlue,
+            &-white{
+                width: 150px;
+                margin: 0 10px;
+                @media screen and (max-width: 550px) {
+                    width: 100%;
+                    margin: 6px 0;
+
+                }
+            }
         }
         &-sz-lg{
             text-transform: uppercase;
-            padding: 20px 25px;
+            padding: 20px 0;
+            text-align: center;
             font-weight: 600;
             border-radius: 5px;
         }
-        @media screen and (max-width:400px ) {
-            display: block;
-            margin-right: 0 !important;
-            margin-top: 20px;
-         }
 
-    
+
     }
 
-    
-    @media screen and (max-width:400px ) {
-        padding-top: 15px;
-     }
 
 }
